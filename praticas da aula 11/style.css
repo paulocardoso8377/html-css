@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(7, 8, 1);
+    
+}
+h1{
+   color: #f4e9e9;
+}
+
+img{
+    width: 100px;
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    height:100px;
+   
+}
+ul{
+   color:#f4e9e9;
+  
+}
