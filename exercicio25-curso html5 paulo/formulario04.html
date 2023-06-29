@@ -21,12 +21,12 @@
             <p>
                 <label for="itel">Telefone</label>
                 <input type="tel" name="tel" id="itel" autocomplete="tel" 
-                placeholder="(xx)xxxx-xxxx" required>
+                pattern="\d{2}\/\d{2}\/\d{4}" placeholder="(xx)xxxx-xxxx" required>
+                
             </p>
         </fieldset>
     </form>
     <!---Estudar mais sobre RegEx--->
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Limpar">
+    
 </body>
 </html>
