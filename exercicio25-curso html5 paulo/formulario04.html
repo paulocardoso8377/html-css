@@ -7,26 +7,31 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadastro.php" autocomplete="on">
-        <fieldset>
-            <legend>Dados pessoais</legend>
-            <p>
-                <label for="inome">Nome</label>
-                <input type="text" name="nome" id="inome" minlength="7" maxlength="20" required autocomplete="name">
-            </p>
-            <p>
-                <label for="iemail">Email</label>
-                <input type="email" name="email" id="iemail" autocomplete="email" required>
-            </p>
-            <p>
-                <label for="itel">Telefone</label>
-                <input type="tel" name="tel" id="itel" autocomplete="tel" 
-                pattern="\d{2}\/\d{2}\/\d{4}" placeholder="(xx)xxxx-xxxx" required>
+    <form action="cadastro.php" method="get" autocomplete="on">
+      
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <p>
+                    <label for="inome">Nome</label>
+                    <input type="text" name="nome" id="inome" minlength="7" maxlength="20" required autocomplete="name">
+                </p>
+                <p>
+                    <label for="iemail">Email</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" required>
+                </p>
+                <p>
+                    <label for="itel">Telefone</label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel"
+                    placeholder="(xx)xxxx-xxxx"required pattern="^\(\d{2}\)-\d{4}-\d{4}$">
                 
-            </p>
-        </fieldset>
+                
+                </p>
+                   <p><input type="email" required></p>
+            </fieldset>
+      
     </form>
-    <!---Estudar mais sobre RegEx--->
+     <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
     
 </body>
 </html>
