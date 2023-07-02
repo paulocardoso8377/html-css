@@ -16,7 +16,7 @@
         </p>
     <p>
         <label for="iidade">Sua idade é:</label> 
-        <output idade="iidade">0</output>
+        <output id="iidade">0</output>
     
     </p>
     <p>
@@ -27,7 +27,7 @@
   <script>
     function calcidade(){
        let atual = new Date().getFullYear
-        iidade.innerHTML = Number(atual) - Number(iano.value)
+        iidade.innerHTML=Number(atual)-Number(iano.value)
     }
 </script>
 </body>

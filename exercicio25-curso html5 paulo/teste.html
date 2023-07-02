@@ -6,16 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="cadastro" method="get" autocomplete="on">
-        <label for="iano">Qual sua idade? </label>
-        <input type="number" name="ano" id="iano" oninput="calcular()">
-
-        <label for="iidade">Sua idade é:</label>
-        <output id="iidade">:</output>
+    <h1>Exemplo de Formulário</h1>
+    <form action="arquivo.js" method="post" autocomplete="off">
+        <p>
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023"
+            oninput="idade.innerHTML = ano_atual - Number(iano.value)">
+        </p>
+        <p>
+            <label for="idade">Sua idade é:</label>
+            <output id="idade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Excluir">
+        </p>
     </form>
+
     <script>
-        let atual =  new Date().getFullYear
-        iidade.innerHTML = Number(atual.value) - Number(iano.value)
+        let ano_atual = new Date().getFullYear();
     </script>
 </body>
 </html>
