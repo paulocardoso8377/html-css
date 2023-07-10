@@ -42,9 +42,11 @@ menu > h1{
     color: white;
     border-top: 2px solid gray;
 }
+
 menu > ul > li > a:hover{
     background-color: gray;
 }
+
 main{
     width: 90vw;
     background-color: white;
