@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*Todas as demais midias*/
+
+
+
+*{
+  font-family: Arial, Helvetica, sans-serif;   
+}
+body{
+    background-image: url(imagens/vulcão.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;/*Typical Device Breakpoints
+-----------------------------------
+Telas pequenas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px 
+Desktop: 992px até 1200px
+Telas grandes: acima de  1200*/ 
+
+
+}
+@media screen and (max-width: 600px){
+    #telap{display: block;}
+    #fone{display: none;}
+    #tablet{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+    #telag{display: none;}
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    #telap{display: none;}
+    #fone{display: block;}
+    #tablet{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+    #telag{display: none;}
+
+   
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    #telap{display: none;}
+    #fone{display:none;}
+    #tablet{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+    #telag{display: none;}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    #telap{display: none;}
+    #fone{display: none;}
+    #tablet{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+    #telag{display: none;}
+}
